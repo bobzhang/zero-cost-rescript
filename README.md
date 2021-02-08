@@ -1,8 +1,7 @@
 
-# Zero cost adoption of ReScript with regard to the bundler size
+# Zero cost adoption of ReScript
 
-This is a repo showing when adopting ReScript in your projects, it adds close to zero cost.
-
+This is a repo showing when adopting ReScript in your projects, it adds close to zero cost to your bundler size unlike many other languages compiled to JS platform.
 
 We have serveral modules:  `listLength`, `listForEachU`, `listForEach`, `App`, `AppOptimized`.
 
