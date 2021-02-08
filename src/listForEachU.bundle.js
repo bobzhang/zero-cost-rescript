@@ -1,16 +1,12 @@
 (() => {
   // node_modules/bs-platform/lib/es6/belt_List.mjs
   function forEachU(_xs, f) {
-    while (true) {
+    for (; ; ) {
       var xs = _xs;
-      if (!xs) {
+      if (!xs)
         return;
-      }
-      f(xs.hd);
-      _xs = xs.tl;
-      continue;
+      f(xs.hd), _xs = xs.tl;
     }
-    ;
   }
 
   // src/listForEachU.bs.js
