@@ -1,3 +1,4 @@
+@@config({no_export})
 type state = {count: int}
 
 type action =

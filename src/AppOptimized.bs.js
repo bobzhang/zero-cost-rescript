@@ -3,10 +3,6 @@
 import * as React from "react";
 import * as ReactDOMRe from "reason-react/src/legacy/ReactDOMRe.js";
 
-var initialState = {
-  count: 0
-};
-
 function reducer(state, action) {
   if (action) {
     return {
@@ -20,7 +16,9 @@ function reducer(state, action) {
 }
 
 function AppOptimized$App(Props) {
-  var match = React.useReducer(reducer, initialState);
+  var match = React.useReducer(reducer, {
+        count: 0
+      });
   var dispatch = match[1];
   return React.createElement("main", undefined, "Simple counter with reducer", React.createElement("div", undefined, React.createElement("button", {
                       onClick: (function (param) {
@@ -35,16 +33,9 @@ function AppOptimized$App(Props) {
                     }, "Increment")));
 }
 
-var App = {
-  make: AppOptimized$App
-};
-
 ReactDOMRe.renderToElementWithId(React.createElement(AppOptimized$App, {}), "root");
 
 export {
-  initialState ,
-  reducer ,
-  App ,
   
 }
 /*  Not a pure module */

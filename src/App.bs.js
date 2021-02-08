@@ -4,10 +4,6 @@ import * as Curry from "bs-platform/lib/es6/curry.mjs";
 import * as React from "react";
 import * as ReactDOMRe from "reason-react/src/legacy/ReactDOMRe.js";
 
-var initialState = {
-  count: 0
-};
-
 function reducer(state, action) {
   if (action) {
     return {
@@ -21,7 +17,9 @@ function reducer(state, action) {
 }
 
 function App$App(Props) {
-  var match = React.useReducer(reducer, initialState);
+  var match = React.useReducer(reducer, {
+        count: 0
+      });
   var dispatch = match[1];
   return React.createElement("main", undefined, "Simple counter with reducer", React.createElement("div", undefined, React.createElement("button", {
                       onClick: (function (param) {
@@ -36,16 +34,9 @@ function App$App(Props) {
                     }, "Increment")));
 }
 
-var App = {
-  make: App$App
-};
-
 ReactDOMRe.renderToElementWithId(React.createElement(App$App, {}), "root");
 
 export {
-  initialState ,
-  reducer ,
-  App ,
   
 }
 /*  Not a pure module */

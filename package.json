@@ -1,5 +1,5 @@
 {
-  "name": "test-esbuild",
+  "name": "rescript-demo",
   "version": "0.1.0",
   "scripts": {
     "clean": "bsb -clean-world",
