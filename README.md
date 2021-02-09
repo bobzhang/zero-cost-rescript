@@ -1,5 +1,5 @@
 
-# Zero bundle cost for ReScript
+# Zero bundle cost for [ReScript](https://github.com/rescript-lang/rescript-compiler)
 
 This is a repo showing that when adopting ReScript in your projects, it adds close to zero cost to your bundler size unlike many other languages compiled to JS platform.
 
