@@ -1,5 +1,5 @@
 (() => {
-  // node_modules/bs-platform/lib/es6/list.mjs
+  // node_modules/bs-platform/lib/es6/list.js
   function length(l) {
     for (var _len = 0, _param = l; ; ) {
       var param = _param, len = _len;
@@ -9,7 +9,7 @@
     }
   }
 
-  // src/listLength.bs.js
+  // src/listLength.mjs
   var u = length({
     hd: 1,
     tl: {

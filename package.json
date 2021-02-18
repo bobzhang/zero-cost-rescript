@@ -12,9 +12,10 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "9.0.0"
+    "bs-platform": "9.0.1"
   },
   "dependencies": {
+    "@rescript/react": "^0.10.1",
     "esbuild": "^0.8.42",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

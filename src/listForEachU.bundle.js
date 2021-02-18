@@ -1,5 +1,5 @@
 (() => {
-  // node_modules/bs-platform/lib/es6/belt_List.mjs
+  // node_modules/bs-platform/lib/es6/belt_List.js
   function forEachU(_xs, f) {
     for (; ; ) {
       var xs = _xs;
@@ -9,7 +9,7 @@
     }
   }
 
-  // src/listForEachU.bs.js
+  // src/listForEachU.mjs
   forEachU({
     hd: 1,
     tl: {

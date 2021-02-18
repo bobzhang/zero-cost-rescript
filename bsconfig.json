@@ -5,7 +5,7 @@
     "dir" : "src",
     "subdirs" : true
   },
-  "bs-dependencies": ["reason-react"],
+  "bs-dependencies": ["@rescript/react"],
   "package-specs" : {"module": "es6"  , "in-source" : true,"suffix": ".mjs"},
   
   "reason": {"react-jsx": 3}

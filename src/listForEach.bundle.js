@@ -1,12 +1,12 @@
 (() => {
-  // node_modules/bs-platform/lib/es6/caml_array.mjs
+  // node_modules/bs-platform/lib/es6/caml_array.js
   function caml_array_sub(x, offset, len) {
     for (var result = new Array(len), j = 0, i = offset; j < len; )
       result[j] = x[i], j = j + 1 | 0, i = i + 1 | 0;
     return result;
   }
 
-  // node_modules/bs-platform/lib/es6/curry.mjs
+  // node_modules/bs-platform/lib/es6/curry.js
   function app(_f, _args) {
     for (; ; ) {
       var args = _args, f = _f, init_arity = f.length, arity = init_arity === 0 ? 1 : init_arity, len = args.length, d = arity - len | 0;
@@ -63,7 +63,7 @@
     };
   }
 
-  // node_modules/bs-platform/lib/es6/belt_List.mjs
+  // node_modules/bs-platform/lib/es6/belt_List.js
   function forEachU(_xs, f) {
     for (; ; ) {
       var xs = _xs;
@@ -76,7 +76,7 @@
     return forEachU(xs, __1(f));
   }
 
-  // src/listForEach.bs.js
+  // src/listForEach.mjs
   forEach({
     hd: 1,
     tl: {
