@@ -28,7 +28,7 @@ module App = {
   }
 }
 
-switch ReactDOM.querySelector("root"){
+switch ReactDOM.querySelector("#root"){
   | None => ()
   | Some(e) => 
     ReactDOM.render(<App/>,e)

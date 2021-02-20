@@ -33,7 +33,7 @@ function AppOptimized$App(Props) {
                     }, "Increment")));
 }
 
-var e = document.querySelector("root");
+var e = document.querySelector("#root");
 
 if (!(e == null)) {
   ReactDom.render(React.createElement(AppOptimized$App, {}), e);
